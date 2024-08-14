@@ -1,0 +1,13 @@
+Tính đa hình có thể hiểu đơn giản là tại mỗi thời điểm một đối tượng có thể thực hiện các hành động khác nhau .
+Ví dụ học sinh khi ở trường thì phải viết bài , làm bài tập , khi học sinh đó ở nhà thì phải làm các công việc nhà ,. 
+Khi học sinh đó ở quán nét thì tất nhiên là chơi game . 
+Trong Java, chúng ta sử dụng nạp chồng phương thức (method overloading) và ghi đè phương thức (method overriding) để có tính đa hình.
+
+Mục đích của tính trừu tượng là làm ẩn đi những tính chất phức tạp của đối tượng bằng cách chỉ đưa ra những thuộc tính và phương thức cần thiêt, 
+ẩn các chi tiết triển khai và chỉ hiển thi chức năng tới người dùng
+Tính trưu tượng thì class con sẽ kết thừa abstract class và override lại các phương thức và thuộc tính của abstract class ( không có overload )
+
+------------------------------
+Các khái niệm:
+-  Dependency Injection (DI): là một kỹ thuật trong lập trình hướng đối tượng, trong đó các phụ thuộc (dependencies) của một đối tượng (object) được cung cấp từ bên ngoài thay vì được khởi tạo bên trong đối tượng đó. Điều này giúp tách biệt việc khởi tạo các thành phần với việc sử dụng chúng, làm cho mã dễ dàng kiểm thử, mở rộng và bảo trì hơn.
+-
