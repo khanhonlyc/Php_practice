@@ -12,4 +12,3 @@ class Student
 function showHello($name){
     echo "Hello {$name}";
 }
-const NAME = "QK";

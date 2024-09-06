@@ -10,12 +10,16 @@ require_once 'LoggerObserver.php';
 
 $auth = new Auth();
 $forumAuth = new ForumAuthObserver();
-// $forumAuth2 = new ForumAuthObserver();
 $logger = new LoggerObserver();
 
 $auth->attach($forumAuth);
 $auth->attach($logger);
 $auth->login();
 $auth->logout();
-// $auth->attach($forumAuth2);
+print_r($auth);
+
+echo "<br /> <br />";
+$auth->detach($forumAuth);
+$auth->login();
+$auth->logout();
 print_r($auth);

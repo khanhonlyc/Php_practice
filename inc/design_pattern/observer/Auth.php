@@ -24,6 +24,7 @@ class Auth
     {
         unset($this->observers[spl_object_hash($observer)]);
     }
+
     function notify(string $event)
     {
         foreach ($this->observers as $observer) {
